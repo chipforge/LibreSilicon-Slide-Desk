@@ -1,0 +1,264 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Libre Silicon]{Libre Silicon} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{hsank} % Your name
+\institute[Chipforge] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Chipforge\\ % Your institution for the title page
+\medskip
+\textit{hsank@nospam.chipforge.org} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Übersicht} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Warum Freies Silizium?} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\subsection{Stellt Euch einmal vor ..} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{Stellt Euch einmal vor, ihr wollt einen eigen Chip fertigen lassen.}
+\begin{itemize}
+\item Ihr geht zur Fab Eures geringsten Mißtrauens
+\item unterzeichnet 3 NDAs (Non-disclosure Agreements), einen für die Technologieinformationen, einen für die Eigenschaften der Standardzellen und einen für die Vertragsdetails wie Mindestabnahmemengen, Lieferfristen, Preise
+\item legt eine Menge Geld auf den Tisch für die Layoutentwicklung und den Maskensatz
+\item und wollt plötzlich die Fab wechseln.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\subsection{Geht nicht!}
+
+\begin{frame}
+\frametitle{Weil}
+\begin{itemize}
+\item Die Technologie eine völlig andere ist,
+\item die Standardzellen eben nicht austauschbar sind,
+\item Ihr die Masken wohl nicht bekommt,
+\item der Maskensatz nicht zur Technologie in einer anderen Fab paßt.
+\item Sprich, die NRE-Kosten (Non-recurring engineering) noch einmal fällig werden.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\subsection{Was also denkt der geneigte Hacker?}
+\begin{frame}
+\frametitle{Selber machen!}
+\begin{itemize}
+\item Ein freier und offener Prozess muß her!
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Wo stehen wir?}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Was bisher geschah}
+\begin{itemize}
+\item David Lanzendörfer findet einen mietbaren Reinraum an der HKUST,
+\item treibt etwas Geld auf,
+\item hält einen Lightning Talk auf dem letzten Congress.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Was derzeit geschieht}
+\begin{itemize}
+\item Wir sind mehr als ein Dutzend Leute auf einer Mailingliste,
+\item treffen uns auf einem Mumble Server jeden Sonntag 21 Uhr HKT,
+\item fressen Lehrbücher.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Baustellen}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{3 Baustellen:}
+\begin{itemize}
+\item Entwicklung eines 1um Prozesses
+https://github.com/leviathanch/libresiliconprocess
+\item Entwicklung einer Standardzellenbibliothek
+https://github.com/chipforge/stdcelllib
+\item Pipe-cleaning der Layoutsoftware
+https://github.com/leviathanch/qtflow
+\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+\section{Vorhaben}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{nächsten Schritte:}
+\begin{itemize}
+\item Entwurf eines Testwavers
+\item Ausmessen der Prozessparameter
+\item Anpassung der Werte für SPICE
+\item Umsetzung der Standardzellen
+\item Prozess einfahren
+\item Fertigung eines ersten Chips zum nächsten Congress?
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Projektseiten}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Mumbel:}
+\begin{itemize}
+\item Jeden Sonntag 21 Uhr Hong Kong Time
+\item Server 109.109.202.102, Port 64738
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Mailingliste:}
+\begin{itemize}
+\item https://list.o2s.ch/mailman/listinfo/libre-silicon-devel
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Danke!}
+	\begin{center}
+		\textbf{Vielen herzlichen Dank!} \\
+		\textbf{Thank you very much!} \\
+	\end{center}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Mailingliste:}
+\begin{itemize}
+\item Mailingliste
+https://list.o2s.ch/mailman/listinfo/libre-silicon-devel
+\item Prozessentwicklung
+https://github.com/leviathanch/libresiliconprocess
+\item Standardzellenbibliothek
+https://github.com/chipforge/stdcelllib
+\item Layoutsoftware
+https://github.com/leviathanch/qtflow
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{The End}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
