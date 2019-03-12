@@ -1,0 +1,296 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Libre Silicon]{LibreSilicon - Bootstrap the Silicon Manufacture Process} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Hagen SANKOWSKI} % Your name
+\institute[Chipforge] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Chipforge\\ % Your institution for the title page
+\medskip
+\textit{hsank@nospam.chipforge.org} % Your email address
+}
+\date{2019-03-15} % {\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}
+Current Situation
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}{Current Situation}
+Image you like to manufacture your own Chip.
+\begin{itemize}
+\item You're going to a Foundry,
+\item signing at least 3 NDAs (Non-disclosure Agreements), one for the Process Kit, one for the Standard Cell Libary and one for Purchase details,
+\item invest a lot of money for the Layout development and the Mask Set,
+\item and have some reasons to change the Foundry Service ..
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current Situation}
+.. you're lost
+\end{frame}
+
+\begin{frame}{Current Situation}
+Reasons are:
+\begin{itemize}
+\item the technology is completely different,
+\item the Standard Cells are mostly different,
+\item the mask does not leave the foundry,
+\item nearly nothing match another technology in another foundry.
+\item Well, you've burned the costs for layout and mask set.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+What to do??
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+Make your self independend!
+\begin{itemize}
+\item design a open and free process.
+\item You can help if you like :-)
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Libre Silicon}
+\begin{itemize}
+\item is a free and open, community based Silicon Manufacturing Process, without NDAs.
+\item mainly Standard CMOS, plus bipolar, plus flash, plus other useful analog stuff.
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}{Libre Silicon}
+What happens so far?
+\end{frame}
+
+\begin{frame}{Libre Silicon}
+2017:
+\begin{itemize}
+\item David Lanzendörfer opens a possibility to rent a Clean Room at Hong Kong University of Science and Technology,
+\item and got some foundations.
+\item At the 34. Chaos Communication Congress in Leipzig he gave a Lightning Talk.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Libre Silicon}
+2018:
+\begin{itemize}
+\item We developed the first Version of our 1 micron Libre Silicon process.
+\item We are working on the Standard Cell Library.
+\item We already hold a Tool Chain Hackathon.
+\item We design a first Test Wafer for technology parameter measurement.
+\item We present our progress (and 1st Wafer) at the 35. Chaos Communication Congress in Leipzig.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Libre Silicon}
+2019:
+\begin{itemize}
+\item Currently we struggle through the Wafer processing, again and again.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Libre Silicon}
+Links:
+\begin{itemize}
+\item Process
+https://github.com/libresilicon/libresiliconprocess
+\item Test Wafer
+https://github.com/chipforge/PearlRiver
+\item Standard Cell Library
+https://github.com/chipforge/StdCellLib
+\item Tool Chain
+https://github.com/leviathanch/qtflow
+\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+\begin{frame}
+What still left?
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}{Targeting}
+\begin{itemize}
+\item Documentation about what and how we like to measure Parameters
+\item Doing Measurement at HKUST
+\item Transfer Parameters into Spice BSIM3v3 models
+\item Finishing Standard Cells
+\item Manufacture first Chips ("555" and Microcontroller) this year
+\item Install our process at foreign Foundries for mass production
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Targeting}
+License:
+\begin{itemize}
+\item Free and Open Source - while for real Hardware GPL or BSD does not work.
+\item Others like CERN we already evaluated.
+\item We like that everybody can use the Process (even in your Basement),
+\item including Universities and real foundries.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Targeting}
+Being Transfer-able means:
+\begin{itemize}
+\item Everybody has the possibility to transfer own designs into other foundries.
+\item Setting Standards / Reference for Analog Designs (which heavily depends on process parameters).
+\item Feasible for Education purposes also, while LibreSilicon is NDA-free.
+\item Foundries can compete in production cost and / or corporate.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Contact us}
+Jour Fix
+\begin{itemize}
+\item Every Sunday at 21.00 Hong Kong Time (13.00 UTC)
+\item we meet us via Mumble at
+\item IP 109.109.202.102, Port 64738, Channel IC
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Contact us}
+Join our Mailing List
+\begin{itemize}
+\item https://list.o2s.ch/mailman/listinfo/libre-silicon-devel
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Thanks!}
+	\begin{center}
+		\textbf{Merci!} \\
+		\textbf{Thank you very much!} \\
+	\end{center}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\begin{itemize}
+\item Mailing List
+https://list.o2s.ch/mailman/listinfo/libre-silicon-devel
+\item Process
+https://github.com/libresilicon/libresiliconprocess
+\item Test Wafer
+https://github.com/chipforge/PearlRiver
+\item Standard Cell Library
+https://github.com/chipforge/StdCellLib
+\item Layout Software
+https://github.com/leviathanch/qtflow
+\end{itemize}
+\huge{\centerline{You can help :-)}}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\huge{\centerline{The End}}
+\end{frame}
+
+\end{document}
